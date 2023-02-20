@@ -43,7 +43,11 @@ class OrganisationController extends Controller
         $organisations = (new Organisation)->newQuery();
         $organisations->latest();
         $organisations = $organisations->paginate(100)->appends(request()->query());
-        return response()->json($organisations);
+
+        $this->data['organisations']=$organisations;
+
+        return $this->response();
+        // return response()->json($organisations);
     }
 
     public function admin()
