@@ -2,9 +2,6 @@ app/node_modules/
 rest/vendor/
 rest/app/storage/
 rest/public/storage
-# Laravel 5 & Lumen specific with changed public path
-rest/public_html/storage
-rest/public_html/hot
 rest/storage/*.key
 
 
