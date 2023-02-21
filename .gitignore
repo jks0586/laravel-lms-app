@@ -2,7 +2,6 @@ rest/vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
-
 # Laravel 4 specific
 rest/bootstrap/compiled.php
 rest/app/storage/
@@ -16,10 +15,9 @@ rest/public_html/storage
 rest/public_html/hot
 
 rest/storage/*.key
-.env
 Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-/app/node_modules
+app/node_modules/
