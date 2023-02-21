@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/lms/organisation/create": [
+    "/register": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/lms/organisation/create.js"
+      "static/chunks/pages/register.js"
     ]
   },
   "ampFirstPages": []
