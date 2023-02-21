@@ -13,6 +13,7 @@ use App\Http\Controllers\Lms\CourseCertificateController;
 use App\Http\Controllers\Lms\CardController;
 use App\Http\Controllers\Lms\CourseCardController;
 use App\Http\Controllers\Lms\TaxController;
+use App\Http\Controllers\Lms\TimezoneController;
 
 
 Route::group([
@@ -34,6 +35,16 @@ Route::group([
     Route::post('organisation/store',[OrganisationController::class,'store'])->name('lms.organisation.store');
     Route::get('organisation/edit/{id}',[OrganisationController::class,'edit'])->name('lms.organisation.edit');
     Route::post('organisation/update/{id}',[OrganisationController::class,'update'])->name('lms.organisation.update');
+
+    // Timezon routes in LMS
+    Route::get('timezone/index',[TimezoneController::class,'index'])->name('lms.timezone.index');
+    Route::get('timezone/admin',[TimezoneController::class,'admin'])->name('lms.timezone.admin');
+    Route::get('timezone/autocomplete',[TimezoneController::class,'autocomplete'])->name('lms.timezone.autocomplete');
+    Route::get('timezone/create',[TimezoneController::class,'create'])->name('lms.timezone.create');
+    Route::post('timezone/store',[TimezoneController::class,'store'])->name('lms.timezone.store');
+    Route::get('timezone/edit/{id}',[TimezoneController::class,'edit'])->name('lms.timezone.edit');
+    Route::post('timezone/update',[TimezoneController::class,'update'])->name('lms.timezone.update');
+
 
 
     // Tax routes in LMS
